@@ -920,7 +920,7 @@ Resources:
     DeletionPolicy: Delete
     Properties:
       BucketName: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
-      AccessControl: PublicRead
+  #    AccessControl: PublicRead
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data"
